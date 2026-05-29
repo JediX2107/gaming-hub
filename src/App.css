@@ -1,38 +1,28 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+  --bg-primary: #0b132b;
+  --bg-secondary: #1c2541;
+  --accent-gold: #ffb703;
+  --text-primary: #f5f7ff;
+  --text-muted: #bfc7e6;
+  --steam-blue: #66c0f3;
+  --xbox-green: #9bf00b;
+  --ps-blue: #66a0ff;
+  --nintendo-red: #ff4d4d;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body{
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  font-family:'Trebuchet MS', 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+  background: radial-gradient(circle at 10% 10%, #243b71 0%, transparent 35%),
+              radial-gradient(circle at 90% 20%, #9d4edd 0%, transparent 30%),
+              linear-gradient(120deg, #0b132b, #1c2541);
+  background-attachment: fixed;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
