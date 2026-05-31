@@ -1,0 +1,118 @@
+
+/*Coppied the css from phase 1 with the help of Cluade AI with some editing  */
+
+.xboxHero {
+  background: linear-gradient(135deg, rgba(102, 244, 133, 0.15), rgba(30, 56, 27, 0.5));
+  border: 1px solid rgba(130, 244, 102, 0.3);
+}
+
+.xboxHero h1 { color: #6bf466; }
+
+
+
+.hero {
+  width: min(1100px, 92%);
+  margin: 40px auto;
+  padding: 60px 40px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  color: #bfc7e6;
+  font-size: 1.1rem;
+}
+
+.filtersBar {
+  width: min(1100px, 92%);
+  margin: 0 auto 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.searchInput {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.07);
+  color: #f5f7ff;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.searchInput:focus {
+  border-color: #66c0f4;
+}
+
+.searchInput::placeholder { color: #bfc7e6; }
+
+.filterGroup {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.05);
+  color: #bfc7e6;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background: rgba(255,183,3,0.2);
+  border-color: #ffb703;
+  color: #ffb703;
+}
+
+.sort-select {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.07);
+  color: #f5f7ff;
+  font-size: 0.85rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.page-content {
+  width: min(1100px, 92%);
+  margin: 0 auto 60px;
+}
+
+.gamesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  color: #bfc7e6;
+}
+
+.noResults button {
+  margin-top: 16px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #ffb703;
+  background: transparent;
+  color: #ffb703;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
