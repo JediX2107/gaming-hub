@@ -31,7 +31,7 @@ function Steam(){
         <div>
             <Navbar />
 
-            <div className="hero steam-hero">
+            <div className="hero steamHero">
                 <h1>🎮 Steam Store</h1>
                 <p>Browse the best PC games - all in one place.</p>
             </div>
