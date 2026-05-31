@@ -1,0 +1,124 @@
+
+/* since I already did the navbar css before I just copied it for saving time with the help of Claude AI with some editing of the class names*/
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: min(1100px, 92%);
+  margin: 18px auto 0;
+  padding: 14px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #f5f7ff;
+}
+
+.brandBadge {
+  width: 30px; height: 30px;
+  border-radius: 8px;
+  background: #ffb703;
+  color: #1a1a1a;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.navLinks a {
+  color: #bfc7e6;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.navLinks a:hover, .navLinks a.active { color: #ffb703; }
+
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.iconBtn {
+  position: relative;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: #f5f7ff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.iconBtn:hover { background: rgba(255,255,255,0.15); }
+
+.badge {
+  position: absolute;
+  top: -6px; right: -6px;
+  background: #ffb703;
+  color: #161616;
+  font-size: 0.65rem;
+  font-weight: 900;
+  border-radius: 50%;
+  width: 18px; height: 18px;
+  display: grid;
+  place-items: center;
+}
+
+.cta {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 0;
+  font-weight: 700;
+  text-decoration: none;
+  color: #161616;
+  background: #ffb703;
+  transition: transform 0.2s;
+}
+
+.cta:hover { transform: translateY(-1px); }
+
+.menuToggle {
+  display: none;
+  background: none;
+  border: 0;
+  color: #f5f7ff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px; left: 4%; right: 4%;
+    background: rgba(11, 19, 43, 0.98);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 12px;
+    padding: 16px;
+    gap: 12px;
+  }
+  .navLinks.open { display: flex; }
+  .menuToggle { display: block; }
+}

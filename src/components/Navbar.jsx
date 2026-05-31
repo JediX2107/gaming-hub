@@ -18,7 +18,7 @@ function Navbar(){
                 <span className="brandBadge">G</span>
                 GameStream
             </Link>
-            <ul className={'nav-links ${menuOpen ? "open" : ""}'}>
+            <ul className={'navLinks ${menuOpen ? "open" : ""}'}>
                 <li><Link to="/" className={isActive("/")}>Home</Link></li>
                 <li><Link to="/steam" className={isActive("/steam")}>Steam</Link></li>
                 <li><Link to="/playstation" className={isActive("/playstation")}>PlayStation</Link></li>
