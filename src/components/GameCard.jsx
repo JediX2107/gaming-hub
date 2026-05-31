@@ -27,7 +27,7 @@ function GameCard({game}){
                 )}
 
                 <button
-                    className={'fav-btn ${favorited ? "favorited":""}'}
+                    className={'favBtn ${favorited ? "favorited":""}'}
                     onClick={()=>toggleFavorite(game)}
                     title={favorited ? "Remove from favorites" : "Add to favorites"}
                     >
