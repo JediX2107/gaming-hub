@@ -1,4 +1,4 @@
-//with the help of Claude Ai I copied the Home page with some edit from Phase 1
+//with the help of Claude Ai I copied the footer with some edit from Phase 1
 import { Link } from "react-router-dom";
 import "./Footer.css";
 
