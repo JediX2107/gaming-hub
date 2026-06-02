@@ -19,9 +19,8 @@ function GameCard({game}){
                        e.target.src = `https://via.placeholder.com/400x180/1c2541/ffffff?text=${encodeURIComponent(game.title)}`; 
                     }}
                 />
-                {game.discount &&(
-                    <span className="discountBadge">-{game.discount}%</span>
-                )}
+                {game.discount > 0 && (
+                     <span className="discountBadge">-{game.discount}%</span> )}
                 {game.gamepass &&(
                     <span className="gamepassBadge">Game Pass</span>
                 )}

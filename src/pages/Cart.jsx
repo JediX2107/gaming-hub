@@ -4,7 +4,7 @@ import "./Cart.css";
 
 function Cart(){
     const{cart, removeFromCart}=useApp();
-    const subtotal=cart.reduce((sum,item)=>sum+item.price*item.quantity, 0);
+    const subtotal=cart.reduce((sum,item)=>sum+(typeof item.price==="number" ? item.price : 0)*item.quantity, 0);
 
     return(
         <div>
@@ -35,7 +35,7 @@ function Cart(){
                             </div>
                             <div className="cartRowRight">
                                 <div className="cartRowPrice">
-                                    ${(item.price*item.quantity).toFixed(2)}
+                                    ${((typeof item.price==="number" ? item.price : 0)*item.quantity).toFixed(2)}
                                 </div>
                                 <button
                                     className="removeBtn"

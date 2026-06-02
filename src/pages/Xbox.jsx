@@ -38,7 +38,7 @@ function Xbox(){
             </div>
 
             <div className="filtersBar">
-                {}
+                
                 <input 
                     type="text"
                     className="searchInput"
@@ -46,9 +46,19 @@ function Xbox(){
                     value={search}
                     onChange={e=>setSearch(e.target.value)}
                 />
+                <select
+                    className="sort-select"
+                    value={sortBy}
+                    onChange={e=>setSortBy(e.target.value)}
+                >
+                    <option value="default">Sort: Default</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="rating">Top Rated</option>
+                </select>
             </div>
 
-            {}
+            
             <div className="filterGroup">
                 {xboxGenres.map(genre=>(
                     <button
@@ -70,7 +80,7 @@ function Xbox(){
                         </button>
                     </div>
                 ):(
-                    <div className="gameGrid">
+                    <div className="gamesGrid">
                         {filtered.map(game=>(
                             <GameCard key={game.id} game={game}/>
                         ))}
