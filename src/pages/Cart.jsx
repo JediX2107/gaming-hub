@@ -39,7 +39,7 @@ function Cart(){
                                 </div>
                                 <button
                                     className="removeBtn"
-                                    onClick={()=>removeFromCart(item.i)}
+                                    onClick={()=>removeFromCart(item.id)}
                                 >
                                     Remove
                                 </button>

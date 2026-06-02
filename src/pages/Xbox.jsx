@@ -10,7 +10,7 @@ function Xbox(){
     const [selectedGenre, setSelevtedGenre]=useState("All");
     const [sortBy, setSortBy]=useState("default");
 
-    let filtered = games.filter(g=>g.genre===selectedGenre);
+    let filtered = games.filter(g=>g.platform==="Xbox");
     if (selectedGenre!=="All"){
         filtered=filtered.filter(g=>g.genre===selectedGenre);
     }
@@ -34,7 +34,7 @@ function Xbox(){
 
             <div className="hero xbox-hero">
                 <h1>🎮 Xbox Store</h1>
-                <p>Browse the best PC games - all in one place.</p>
+                <p>Browse the best Xbox games - all in one place.</p>
             </div>
 
             <div className="filtersBar">
@@ -53,7 +53,7 @@ function Xbox(){
                 {xboxGenres.map(genre=>(
                     <button
                         key={genre}
-                        className={'filter-btn ${selectedGenre === genre ? "active" : ""'}
+                        className={`filter-btn ${selectedGenre === genre ? "active" : ""}`}
                         onClick={()=>setSelevtedGenre(genre)}
                     >
                         {genre}

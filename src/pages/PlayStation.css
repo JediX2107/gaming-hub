@@ -89,18 +89,18 @@
   outline: none;
 }
 
-.page-content {
+.pageContent {
   width: min(1100px, 92%);
   margin: 0 auto 60px;
 }
 
-.gamesGrid {
+.gameGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 20px;
 }
 
-.no-results {
+.noResults {
   text-align: center;
   padding: 60px 20px;
   color: #bfc7e6;

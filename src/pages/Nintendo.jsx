@@ -10,7 +10,7 @@ function Nintendo(){
     const [selectedGenre, setSelevtedGenre]=useState("All");
     const [sortBy, setSortBy]=useState("default");
 
-    let filtered = games.filter(g=>g.genre===selectedGenre);
+    let filtered = games.filter(g=>g.platform==="Nintendo");
     if (selectedGenre!=="All"){
         filtered=filtered.filter(g=>g.genre===selectedGenre);
     }
@@ -34,7 +34,7 @@ function Nintendo(){
 
             <div className="hero nintendo-hero">
                 <h1>🎮 Nintendo Store</h1>
-                <p>Browse the best PC games - all in one place.</p>
+                <p>Browse the best Nintendo games - all in one place.</p>
             </div>
 
             <div className="filtersBar">
@@ -53,7 +53,7 @@ function Nintendo(){
                 {nintendoGenres.map(genre=>(
                     <button
                         key={genre}
-                        className={'filter-btn ${selectedGenre === genre ? "active" : ""'}
+                        className={`filter-btn ${selectedGenre === genre ? "active" : ""}`}
                         onClick={()=>setSelevtedGenre(genre)}
                     >
                         {genre}

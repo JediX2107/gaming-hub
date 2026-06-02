@@ -11,7 +11,7 @@ function GameCard({game}){
 
     return(
         <div className="gameCard">
-            <div className="gameCardImageWarp">
+            <div className="gameCardImageWrap">
                 <img 
                     src={game.image}
                     alt={game.title}
@@ -27,7 +27,7 @@ function GameCard({game}){
                 )}
 
                 <button
-                    className={'favBtn ${favorited ? "favorited":""}'}
+                    className={`favBtn ${favorited ? "favorited" : ""}`}
                     onClick={()=>toggleFavorite(game)}
                     title={favorited ? "Remove from favorites" : "Add to favorites"}
                     >
@@ -38,15 +38,17 @@ function GameCard({game}){
             <div className="gameCardInfo">
                 <div className="gameCardTitle">{game.title}</div>
                 <div className="gameCardMeta">
-                    <span className={'platformTag ${game.platform.toLowerCase()}'}>
+                    <span className={`platformTag ${game.platform.toLowerCase()}`}>
                         {game.platform}
                     </span>
                     <span className="genreTag">{game.genre}</span>
                 </div>
                 <div className="gameCardPrice">
-                    {discountedPrice ? (
+                    {game.price === 0 || game.price === "Free" ? (
+                        <span className="priceFree">Free</span>
+                    ) : discountedPrice ? (
                         <>
-                            <span className="priceOrginal">${game.price.toFixed(2)}</span>
+                            <span className="priceOriginal">${game.price.toFixed(2)}</span>
                             <span className="priceSale">${discountedPrice}</span>
                         </>
                     ):(

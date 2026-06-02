@@ -9,7 +9,7 @@ function Steam(){
     const [selectedGenre, setSelevtedGenre]=useState("All");
     const [sortBy, setSortBy]=useState("default");
 
-    let filtered = games.filter(g=>g.genre===selectedGenre);
+    let filtered = games.filter(g=>g.platform==="Steam");
     if (selectedGenre!=="All"){
         filtered=filtered.filter(g=>g.genre===selectedGenre);
     }
@@ -52,7 +52,7 @@ function Steam(){
                 {steamGenres.map(genre=>(
                     <button
                         key={genre}
-                        className={'filter-btn ${selectedGenre === genre ? "active" : ""'}
+                        className={`filter-btn ${selectedGenre === genre ? "active" : ""}`}
                         onClick={()=>setSelevtedGenre(genre)}
                     >
                         {genre}
