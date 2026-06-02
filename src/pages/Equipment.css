@@ -34,6 +34,14 @@
   align-items: center;
 }
 
+.filterGroup {
+  width: min(1100px, 92%);
+  margin: 0 auto 24px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
 .searchInput {
   flex: 1;
   min-width: 200px;

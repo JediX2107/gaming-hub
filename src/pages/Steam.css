@@ -56,6 +56,8 @@
 .searchInput::placeholder { color: #bfc7e6; }
 
 .filterGroup {
+  width: min(1100px, 92%);
+  margin: 0 auto 24px;
   display: flex;
   gap: 8px;
   flex-wrap: wrap;

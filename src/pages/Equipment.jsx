@@ -571,13 +571,13 @@ function Equipment(){
                     </select>
             </div>
 
-            <div className="filterGroup" style={{width:"min(1100px, 92%)",margin:"0 auto 24px"}}>
+            <div className="filterGroup" >
                 {categories.map(cat=>(
 
                     <button
                         key={cat}
                         className={`filter-btn ${selectedCategory===cat ? "active":""}`}
-                        onClick={()=>selectedCategory(cat)}
+                        onClick={()=>setSelectedCategory(cat)}
                     >
                         {cat}
                     </button>
