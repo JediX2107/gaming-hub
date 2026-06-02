@@ -1,0 +1,285 @@
+/*With the help of Claude Ai I copied the Home page with some edit from Phase 1 */
+.homeHero {
+  width: 100%;
+  padding: 80px 0 60px;
+  text-align: center;
+}
+
+.homeHeroContent {
+  width: min(760px, 92%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.homeHeroBadge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 183, 3, 0.4);
+  background: rgba(255, 183, 3, 0.1);
+  color: #ffb703;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.homeHeroTitle {
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 900;
+  color: #f5f7ff;
+  line-height: 1.15;
+}
+
+.homeHeroAccent {
+  background: linear-gradient(90deg, #ffb703, #ff8c00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.homeHeroSub {
+  font-size: 1rem;
+  color: #bfc7e6;
+  max-width: 520px;
+  line-height: 1.6;
+}
+
+/* ── hero search ── */
+.homeSearchRow {
+  width: 100%;
+  max-width: 560px;
+}
+
+.homeSearchWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.homeSearchIcon {
+  position: absolute;
+  left: 16px;
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+.homeSearchInput {
+  width: 100%;
+  padding: 14px 44px 14px 44px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.07);
+  color: #f5f7ff;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.homeSearchInput:focus {
+  border-color: #ffb703;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.homeSearchInput::placeholder { color: #7a85a8; }
+
+.homeSearchClear {
+  position: absolute;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  font-size: 0.65rem;
+  color: #bfc7e6;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.homeSearchClear:hover { background: rgba(255,255,255,0.22); }
+
+
+.homeSearchResults {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  text-align: left;
+}
+
+.homeSearchCount {
+  font-size: 0.85rem;
+  color: #bfc7e6;
+  margin-bottom: 20px;
+}
+
+.homeSearchEmpty {
+  font-size: 0.95rem;
+  color: #bfc7e6;
+  margin-bottom: 40px;
+}
+
+.homeSearchGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+
+.homeSection {
+  padding: 0 0 60px;
+}
+
+.homeSectionInner {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.homeSectionHeader {
+  margin-bottom: 28px;
+}
+
+.homeSectionTitle {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #f5f7ff;
+  margin-bottom: 6px;
+}
+
+.homeSectionSub {
+  font-size: 0.85rem;
+  color: #bfc7e6;
+}
+
+
+.platformGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 0;
+}
+
+.platformCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 28px 16px;
+  border-radius: 16px;
+  border: 1px solid;
+  text-decoration: none;
+  transition: transform 0.25s, box-shadow 0.25s;
+  text-align: center;
+}
+
+.platformCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+.platformCardIcon { font-size: 2rem; }
+
+.platformCardName {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.platformCardCount {
+  font-size: 0.75rem;
+  color: #bfc7e6;
+}
+
+.platformCardArrow {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+
+.featuredGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+
+.topPicksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+
+.equipCta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px 44px;
+  border-radius: 20px;
+  border: 1px solid rgba(155, 240, 11, 0.25);
+  background: linear-gradient(135deg, rgba(155, 240, 11, 0.07), rgba(16, 124, 16, 0.15));
+  text-decoration: none;
+  gap: 20px;
+  transition: border-color 0.25s, transform 0.25s;
+}
+
+.equipCta:hover {
+  border-color: rgba(155, 240, 11, 0.5);
+  transform: translateY(-2px);
+}
+
+.equipCtaText {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.equipCtaBadge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: rgba(155, 240, 11, 0.15);
+  color: #9bf00b;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  width: fit-content;
+}
+
+.equipCtaText h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #f5f7ff;
+}
+
+.equipCtaText p {
+  font-size: 0.85rem;
+  color: #bfc7e6;
+}
+
+.equipCtaArrow {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #9bf00b;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+
+@media (max-width: 900px) {
+  .platformGrid  { grid-template-columns: repeat(2, 1fr); }
+  .featuredGrid  { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .homeHero { padding: 50px 0 40px; }
+  .platformGrid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .platformCard { padding: 20px 10px; }
+  .featuredGrid { grid-template-columns: 1fr; }
+  .equipCta { flex-direction: column; align-items: flex-start; padding: 24px; }
+}
