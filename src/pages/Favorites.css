@@ -1,1 +1,65 @@
 /* Used Claude Ai to style this page with same style of phase 1*/
+
+
+.pageHeader {
+  width: min(1100px, 92%);
+  margin: 40px auto 24px;
+}
+
+.pageHeader h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #f5f7ff;
+  margin-bottom: 6px;
+}
+
+.pageHeader p {
+  color: #bfc7e6;
+  font-size: 0.95rem;
+}
+
+
+.pageContent {
+  width: min(1100px, 92%);
+  margin: 0 auto 60px;
+}
+
+
+.gamesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+
+.emptyState {
+  text-align: center;
+  padding: 80px 20px;
+  color: #bfc7e6;
+}
+
+.empty-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.emptyState h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #f5f7ff;
+  margin-bottom: 10px;
+}
+
+.emptyState p {
+  font-size: 0.95rem;
+  color: #bfc7e6;
+  max-width: 320px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+
+@media (max-width: 600px) {
+  .pageHeader h1 { font-size: 1.6rem; }
+  .gamesGrid { grid-template-columns: 1fr; }
+}
