@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
 import GameCard from "../components/GameCard";
-import {games, genres} from "../data/games";
+//import {games, genres} from "../data/games";
 import "./Steam.css";
 
 function Steam(){

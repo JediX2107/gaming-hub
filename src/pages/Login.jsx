@@ -1,7 +1,7 @@
 //with the help of Claude Ai I copied the login with some edit from Phase 1
 
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+//import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "./Login.css";
